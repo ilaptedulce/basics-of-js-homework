@@ -35,3 +35,67 @@ for (let i = 0; i < size; i++) {
   chessboard += "\n";
 }
 console.log(chessBoard);
+/* ------------------------------------Feedback------------------------------------
+
+ Overall good solution. Good code readability.
+ Great that you use "let" keyword.
+
+ Just two small issues:
+
+ 1) the code runs with errors because on line 35 you use "chessboard" instead of "chessBoard".
+
+ 2) instead of the expected result:
+
+# # # #
+ # # # #
+# # # #
+ # # # #
+# # # #
+ # # # #
+# # # #
+ # # # #
+
+The result is:
+
+  # # # #
+# # # #
+ # # # #
+# # # #
+ # # # #
+# # # #
+ # # # #
+# # # #
+
+ First line has one additional space. That happens because you initialized your "chessBoard" with " "(contains space) instead of ""(empty string)
+
+ Also you first row should start with "#" instead of " " so you should replace the string concatenation like this:
+
+for (let i = 0; i < size; i++) {
+  for (let j = 0; j < size; j++) {
+    if ((i + j) % 2 == 0) {
+      chessBoard += '#';
+    } else {
+      chessBoard += ' ';
+    }
+  }
+  chessboard += '\n';
+}
+
+Final correct code: 
+
+let size = 8;
+let chessBoard = '';
+
+for (let i = 0; i < size; i++) {
+  for (let j = 0; j < size; j++) {
+    if ((i + j) % 2 === 0) {
+      chessBoard += '#';
+    } else {
+      chessBoard += ' ';
+    }
+  }
+  chessBoard += '\n';
+}
+console.log(chessBoard);
+
+*/

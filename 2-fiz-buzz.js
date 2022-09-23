@@ -24,3 +24,20 @@ for (let n = 1; n <= 100; n++) {
     console.log(n);
   }
 }
+// ------------------------------------Feedback------------------------------------
+
+// Great work!
+// Elegant solution, good code readability.
+// I appreciate that you know when to use the "else if" conditional statements. This is a good place for them.
+
+// There is just a minor thing that I would like to point out:
+// We prefer strict equality operator check over equality operator because it helps us avoid some bugs.
+
+/* JavaScript has two sets of equality operators: === and !==, and their evil twins == and !=. 
+ The good ones work the way you would expect. 
+ If the two operands are of the same type and have the same value, then === produces true and !== produces false. 
+ The evil twins do the right thing when the operands are of the same type, but if they are of different types, they attempt to coerce the values. 
+ The rules by which they do that are complicated and unmemorable.
+ */
+
+// (https://stackoverflow.com/a/359509)

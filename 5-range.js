@@ -46,3 +46,13 @@ function range(start, end, step) {
   return result;
 }
 console.log(range(1, 10, 2));
+// ------------------------------------Feedback------------------------------------
+
+// 5.1 Great work! Good code readability, great solutions!
+
+// 5.2 From my point of view not the most elegant solution.
+// Using "var" keyword to declare variables is a bad practice. Take advantage of ES6 features.
+// 🔴 "numLoops" is declared without a keyword which means it is a global variable (The variables declared without the var keyword becomes global variables, irrespective of where they are declared.)
+// Useful short explanation why "var" is dangerous (https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/)
+// You can use function default parameters (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+// instead of: if (step == undefined) step = 1;
