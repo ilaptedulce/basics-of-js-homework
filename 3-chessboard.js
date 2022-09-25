@@ -20,18 +20,18 @@
  *
  */
 
-// Your code here.
-let size = 8;
-let chessBoard = " ";
+//  Your code here.
+let size = 8
+let chessBoard = ''
 
 for (let i = 0; i < size; i++) {
   for (let j = 0; j < size; j++) {
-    if ((i + j) % 2 == 0) {
-      chessBoard += " ";
+    if ((i + j) % 2 === 0) {
+      chessBoard += '#'
     } else {
-      chessBoard += "#";
+      chessBoard += ' '
     }
   }
-  chessboard += "\n";
+  chessBoard += '\n'
 }
-console.log(chessBoard);
+console.log(chessBoard)

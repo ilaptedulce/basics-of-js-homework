@@ -16,33 +16,33 @@
  */
 
 // Your code here.
-//5.1
-function rangeOfNumbers(start, end) {
-  let arr = [];
+//  5.1
+function rangeOfNumbers (start, end) {
+  const arr = []
   for (start; start <= end; start++) {
-    arr.push(start);
+    arr.push(start)
   }
-  return arr;
+  return arr
 }
-let array = rangeOfNumbers(1, 7);
-console.log(array);
+let array = rangeOfNumbers(1, 7)
+console.log(array)
 
-function Sum(array) {
+function Sum (array) {
   return array.reduce((acc, curr) => {
-    return acc + curr;
-  });
+    return acc + curr
+  })
 }
-console.log(Sum(array));
+console.log(Sum(array))
 
-//5.2
-function range(start, end, step) {
-  var result = [];
-  if (step == undefined) step = 1;
-  numLoops = Math.abs((end - start) / step) + 1;
-  for (var i = 1; i <= numLoops; i++) {
-    result.push(start);
-    start += step;
+//  5.2
+function range (start, end, step) {
+  let result = []
+  if (step === undefined) step = 1
+  const numLoops = Math.abs((end - start) / step)
+  for (let i = 0; i <= numLoops; i++) {
+    result.push(start)
+    start += step
   }
-  return result;
+  return result
 }
-console.log(range(1, 10, 2));
+console.log(range(1, 10, 2))

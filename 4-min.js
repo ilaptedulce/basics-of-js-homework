@@ -13,27 +13,26 @@
  */
 
 // Your code here.
-//4.1
-function minNum(a, b) {
+//  4.1
+function minNum (a, b) {
   if (a < b) {
-    console.log(a);
+    console.log(a)
   } else {
-    console.log(b);
+    console.log(b)
   }
 }
-minNum(0, 10);
-//4.2
-function getMin(array) {
-  let min = array[0];
+minNum(0, 10)
+//  4.2
+function getMin (array) {
+  let min = array[0]
   for (let i = 0; i < array.length; i++) {
-    let element = array[i];
+    let element = array[i]
     if (element < min) {
-      min = element;
+      min = element
     }
   }
-  return min;
+  return min
 }
-let array = [25, 50, 75, 56, 11, 50, 7, 9, 12];
-let result = getMin(array);
-console.log("The smallest number is : ", result);
-
+let array = [25, 50, 75, 56, 11, 50, 7, 9, 12]
+let result = getMin(array)
+console.log('The smallest number is : ', result)

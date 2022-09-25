@@ -9,9 +9,10 @@
  */
 
 // Your code here.
-function reverseArray(array) {
-  var reversedArray = [];
-  while ((i = array.pop())) reversedArray.push(i);
-  return reversedArray;
+function reverseArray (array) {
+  const reversedArray = []
+  let i
+  while ((i = array.pop())) reversedArray.push(i)
+  return reversedArray
 }
-console.log(reverseArray(["a", "b", "c", "d", "e"]));
+console.log(reverseArray(['a', 'b', 'c', 'd', 'e']))
